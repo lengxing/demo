@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		* {
+			margin: 0 auto;
+			padding: 0 auto;
+		}
+		
+		html,
+		body {
+			width: 100%;
+		}
+		
+		div {
+			width: 50%;
+			height: 500px;
+			float: left;
+			background-repeat: no-repeat;
+		}
+		
+		img {
+			width: 50%;
+			height: 500px;
+			float: left;
+		}
+	</style>
+</head>
+
+<body>
+	<img class="test-lazyload" src="default.jpg" data-original="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=827020255,4071626112&fm=21&gp=0.jpg">
+	<img src="default.jpg" class="test-lazyload" data-original="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1213674897,939582694&fm=11&gp=0.jpg">
+
+	<img class="test-lazyload" src="default.jpg" data-original="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3704122693,1924714915&fm=21&gp=0.jpg">
+	<img src="default.jpg" class="test-lazyload" data-original="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1824807693,4159709632&fm=21&gp=0.jpg">
+
+	<img class="test-lazyload" src="default.jpg" data-original="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3482505542,1886996970&fm=21&gp=0.jpg">
+	<img src="default.jpg" class="test-lazyload" data-original="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3156092575,3064732415&fm=11&gp=0.jpg">
+
+	<img class="test-lazyload" src="default.jpg" data-original="http://img17.3lian.com/d/file/201701/16/961239def193723b8d23ec2862e5ba37.jpg">
+	<img src="default.jpg" class="test-lazyload" data-original="http://img17.3lian.com/d/file/201701/16/2903447217bdc2a804e2d37487627032.jpg">
+
+	<img class="test-lazyload" src="default.jpg" data-original="http://img17.3lian.com/d/file/201701/16/828d099209191784e20568ae4163384f.jpg">
+	<img src="default.jpg" class="test-lazyload" data-original="http://img17.3lian.com/d/file/201701/16/355fc6379da5c087cfc342b317bf3d76.jpg">
+
+	<script type="text/javascript" src="../../js/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="jquery.lazyload.min.js"></script>
+	<script type="text/javascript">
+		$('img').lazyload();
+	</script>
+</body>
+
+</html>
