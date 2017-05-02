@@ -19,10 +19,10 @@
 
 
 ## messy ##
-        console  ---->  字符画 console彩色背景 console图
+        console ----> 字符画、console彩色背景、console图
 
 ## InDepthUnderstand_CSS ##
-        unescape、escape  ---->  Escape加密/UnEscape解密
+        escape_unescape ----> Escape加密、UnEscape解密
 
 ## InDepthUnderstand_JS ##
         unescape、escape  ---->  Escape加密/UnEscape解密
