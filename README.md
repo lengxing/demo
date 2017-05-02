@@ -13,11 +13,16 @@
 | Clipboard2    | 剪贴板ZeroClipboard.js  (需要服务器环境） |
 | cutString     | 切割字符串bluemp    |
 | messy         | 杂物  (console)  |
-| cutString     | 切割字符串bluemp    |
-| cutString     | 切割字符串bluemp    |
-| cutString     | 切割字符串bluemp    |
+| InDepthUnderstand_CSS    | 深入理解CSS    |
+| InDepthUnderstand_JS     | 深入理解JS     |
 
 
 
 ## messy ##
-        console  ----->  字符画 console彩色背景 console图
+        console  ---->  字符画 console彩色背景 console图
+
+## InDepthUnderstand_CSS ##
+        unescape、escape  ---->  Escape加密/UnEscape解密
+
+## InDepthUnderstand_JS ##
+        unescape、escape  ---->  Escape加密/UnEscape解密
