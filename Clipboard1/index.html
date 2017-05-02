@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div type="text" class="ScreenEffectSetInput specialDiv" id="copy_url">ssssssssssssssssssssssssssssssssss</div>
+    <a href="javascript:void(0)" class="ScreenEffectSetCopy" style="color:#5998f5;" id="copy_d">复制</a>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="./jquery.zclip.min.js"></script>
+    <script>
+        $('#copy_d').zclip({
+			path: "./ZeroClipboard.swf",
+			copy: function() {
+				return $('#copy_url').text();
+			}
+		});
+    </script>
+</body>
+
+</html>
