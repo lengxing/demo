@@ -1,7 +1,7 @@
 # demo
 存放一些干净整洁的demo
 
-*作者： `<font style="color:red;">张晓政</font>`*
+*作者： `张晓政`*
 
 ***
 
