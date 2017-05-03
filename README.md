@@ -7,14 +7,15 @@
 
 <br/>
 
-|   目录        |     简介      |
-| ------------- |:-------------:|
-| Clipboard1    | 剪贴板jquery.zclip.js  （需要服务器环境） |
-| Clipboard2    | 剪贴板ZeroClipboard.js  (需要服务器环境） |
-| cutString     | 切割字符串bluemp    |
-| messy         | 杂物  (console)  |
-| InDepthUnderstand_CSS    | 深入理解CSS    |
-| InDepthUnderstand_JS     | 深入理解JS     |
+|   目录                      |     简介      |
+| --------------------------- |:-------------:|
+| Clipboard1                  | 剪贴板jquery.zclip.js  （需要服务器环境） |
+| Clipboard2                  | 剪贴板ZeroClipboard.js  (需要服务器环境） |
+| workerman-chat-for-win      | 聊天室  (需要php5.3以上环境)  |
+| cutString                   | 切割字符串bluemp    |
+| messy                       | 杂物  (console)  |
+| InDepthUnderstand_CSS       | 深入理解CSS    |
+| InDepthUnderstand_JS        | 深入理解JS     |
 
 
 
