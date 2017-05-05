@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>destroy</title>
+  <link rel="stylesheet" href="../css/jPages.css">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      font: 12px 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+      padding: 0 0 200px 0;
+      color: #222;
+    }
+
+    .defaults {
+      float: left;
+      width: 400px;
+    }
+
+    .holder {
+      margin: 15px 0;
+    }
+
+    .holder a {
+      font-size: 12px;
+      cursor: pointer;
+      margin: 0 5px;
+      color: #333;
+    }
+
+    .holder a:hover {
+      background-color: #222;
+      color: #fff;
+    }
+
+    .holder a.jp-previous {
+      margin-right: 15px;
+    }
+
+    .holder a.jp-next {
+      margin-left: 15px;
+    }
+
+    .holder a.jp-current,
+    a.jp-current:hover {
+      color: #FF4242;
+      font-weight: bold;
+    }
+
+    .holder a.jp-disabled,
+    a.jp-disabled:hover {
+      color: #bbb;
+    }
+
+    .holder a.jp-current,
+    a.jp-current:hover,
+    .holder a.jp-disabled,
+    a.jp-disabled:hover {
+      cursor: default;
+      background: none;
+    }
+
+    .holder span {
+      margin: 0 5px;
+    }
+
+    #itemContainer {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+    }
+
+    #itemContainer li {
+      display: inline-block;
+      zoom: 1;
+      opacity: 1;
+    }
+
+    img {
+      border: 0;
+    }
+  </style>
+  <script type="text/javascript" src="../js/jquery-3.2.0.min.js"></script>
+  <script src="../js/jPages.js"></script>
+  <script>
+    $(function () {
+      $("div.holder").jPages({
+        containerID: "itemContainer"
+      });
+      $("button").click(function () {
+        $("div.holder").jPages("destroy");
+        $(this).remove();
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div id="content" class="defaults">
+    <div class="holder"></div>
+    <ul id="itemContainer">
+      <li><img src="img/img (1).jpg" alt="image"></li>
+      <li><img src="img/img (2).jpg" alt="image"></li>
+      <li><img src="img/img (3).jpg" alt="image"></li>
+      <li><img src="img/img (4).jpg" alt="image"></li>
+      <li><img src="img/img (5).jpg" alt="image"></li>
+      <li><img src="img/img (6).jpg" alt="image"></li>
+      <li><img src="img/img (7).jpg" alt="image"></li>
+      <li><img src="img/img (8).jpg" alt="image"></li>
+      <li><img src="img/img (9).jpg" alt="image"></li>
+      <li><img src="img/img (10).jpg" alt="image"></li>
+      <li><img src="img/img (11).jpg" alt="image"></li>
+      <li><img src="img/img (12).jpg" alt="image"></li>
+      <li><img src="img/img (13).jpg" alt="image"></li>
+      <li><img src="img/img (14).jpg" alt="image"></li>
+      <li><img src="img/img (15).jpg" alt="image"></li>
+      <li><img src="img/img (16).jpg" alt="image"></li>
+      <li><img src="img/img (17).jpg" alt="image"></li>
+      <li><img src="img/img (18).jpg" alt="image"></li>
+      <li><img src="img/img (19).jpg" alt="image"></li>
+      <li><img src="img/img (20).jpg" alt="image"></li>
+      <li><img src="img/img (21).jpg" alt="image"></li>
+    </ul>
+  </div>
+</body>
+</html>
