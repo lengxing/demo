@@ -40,3 +40,22 @@
 
 +   URI ----> URI.js url解析
 +   Blue
+
+
+## 常用网址 ##
+
+### 类库 ###
+[超棒的30款JS类库和工具-CSDN.NET](http://www.csdn.net/article/2013-07-01/2816068-best-javascript-libraries-and-tools)
+
+### 插件 ###
+[超棒的30款JS类库和工具-CSDN.NET](http://www.csdn.net/article/2013-07-01/2816068-best-javascript-libraries-and-tools)
+
+### 工具 ###
+[超棒的30款JS类库和工具-CSDN.NET](http://www.csdn.net/article/2013-07-01/2816068-best-javascript-libraries-and-tools)
+
+### 文章 ###
+[超棒的30款JS类库和工具-CSDN.NET](http://www.csdn.net/article/2013-07-01/2816068-best-javascript-libraries-and-tools)
+
+
+
+
