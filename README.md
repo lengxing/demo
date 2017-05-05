@@ -24,10 +24,10 @@
 
 
 ## messy ##
-        console ----> 字符画、console彩色背景、console图
+        console --> 字符画、console彩色背景、console图
 
 ## InDepthUnderstand_CSS ##
-        escape_unescape ----> Escape加密、UnEscape解密
+        escape_unescape --> Escape加密、UnEscape解密
 
 ## InDepthUnderstand_JS ##
 +   Event ----> 事件
@@ -35,5 +35,5 @@
         Entrust --> 事件委托
         onerror --> on事件
 
-+   Green
++   URI ----> URI.js url解析
 +   Blue
