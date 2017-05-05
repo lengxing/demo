@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>js性能优化</title>
+</head>
+
+<body>
+    <ul id='list'>
+        <li>精通css</li>
+        <li>精通js</li>
+        <li>精通html</li>
+        ......
+    </ul>
+</body>
+
+</html>
+<script type="text/javascript">
+    (function () {
+        var a = document.getElementById('list');
+        a.addEventListener('click', function (e) {
+            var b = e.target;
+            alert(b.innerHTML);
+        }, false);
+    })();
+
+</script>
