@@ -30,7 +30,10 @@
         escape_unescape ----> Escape加密、UnEscape解密
 
 ## InDepthUnderstand_JS ##
-#### Event  ---->  js事件 ####
-+   Entrust --> 事件委托
++   Event ----> 事件
+
+        Entrust --> 事件委托
+        onerror --> on事件
+
 +   Green
 +   Blue
