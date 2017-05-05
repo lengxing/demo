@@ -22,7 +22,8 @@
 | InDepthUnderstand_CSS       | 深入理解CSS    |
 | InDepthUnderstand_JS        | 深入理解JS     |
 
-
+## messy ##
+        mobileHack.md --> 移动端上遇到的各种坑与相对解决方案
 
 ## messy ##
         console --> 字符画、console彩色背景、console图
@@ -62,7 +63,7 @@
 
 
 ### 文章 ###
-[jQuery的deferred对象详解t - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2011/08/a_detailed_explanation_of_jquery_deferred_object.html)
+[jQuery的deferred对象详解 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2011/08/a_detailed_explanation_of_jquery_deferred_object.html)
 
 
 
