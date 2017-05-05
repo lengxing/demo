@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script src="../js/URI.min.js"></script>
+    <script>
+        /*
+            URI.js - URLs in Javascript
+            http://medialize.github.io/URI.js/ 
+
+            URI.js - API Documentation
+            http://medialize.github.io/URI.js/docs.html#accessors-username
+        */
+        var init = new init();
+        function init(){
+            this.url = window.location.href;
+            this.URI = new URI(this.url);
+        }
+
+        console.log(init.URI.domain())
+        console.log(init.URI.subdomain())
+    </script>
+</body>
+</html>
