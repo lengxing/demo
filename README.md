@@ -44,21 +44,25 @@
 
 ## 常用网址 ##
 
--------------------------
 ### 类库 ###
 [超棒的30款JS类库和工具-CSDN.NET](http://www.csdn.net/article/2013-07-01/2816068-best-javascript-libraries-and-tools)
 
--------------------------
+
+
 ### 插件 ###
-[超棒的30款JS类库和工具-CSDN.NET](http://www.csdn.net/article/2013-07-01/2816068-best-javascript-libraries-and-tools)
+[jQuery插件库-jq22.com](http://www.jq22.com/)
 
--------------------------
+
+
 ### 工具 ###
-[超棒的30款JS类库和工具-CSDN.NET](http://www.csdn.net/article/2013-07-01/2816068-best-javascript-libraries-and-tools)
+[Markdown 语法说明 (简体中文版)](http://www.appinn.com/markdown/)
 
--------------------------
+[在线工具 —— 开源中国社区](http://tool.oschina.net/)
+
+
+
 ### 文章 ###
-[超棒的30款JS类库和工具-CSDN.NET](http://www.csdn.net/article/2013-07-01/2816068-best-javascript-libraries-and-tools)
+[jQuery的deferred对象详解t - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2011/08/a_detailed_explanation_of_jquery_deferred_object.html)
 
 
 
