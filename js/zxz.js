@@ -71,6 +71,9 @@
             return len;
         },
         autoAddEllipsis: function (pStr, pLen) {
+            /*
+                切割字符串
+            */
             if (pStr == '' || pStr == null || pStr == undefined) {
                 pStr == '';
                 return '';
@@ -142,9 +145,55 @@
                     return false;
                 }
             }
+        },
+        hexToRgba: function (co) {
+            /*
+                计算颜色值
+                Z.clacColor('#00538b') --> 0,83,139
+            */
+            var reg = /^#([0-9a-fA-f]{3}|[0-9a-fA-f]{6})$/;
+            var sColor = co;
+            if (sColor && reg.test(sColor)) {
+                if (sColor.length === 4) {
+                    var sColorNew = "#";
+                    for (var i = 1; i < 4; i += 1) {
+                        sColorNew += sColor.slice(i, i + 1).concat(sColor.slice(i, i + 1));
+                    }
+                    sColor = sColorNew;
+                }
+                //处理六位的颜色值  
+                var sColorChange = [];
+                for (var i = 1; i < 7; i += 2) {
+                    sColorChange.push(parseInt("0x" + sColor.slice(i, i + 2)));
+                }
+                return   sColorChange.join(",");
+            } else {
+                return sColor;
+            }
+        },
+        rgbToHex: function(rgb){
+            /*
+                计算颜色值
+                Z.rgbToHex('rgba(0,13,139,0.3)') --> hex:"#000d8b" alpha:30
+            */
+            var rRgba = /rgba?\((\d{1,3}),(\d{1,3}),(\d{1,3})(,([.\d]+))?\)/,
+                r, g, b, a,
+                rsa = rgb.replace(/\s+/g, "").match(rRgba);
+            if (rsa) {
+                r = (+rsa[1]).toString(16);
+                r = r.length == 1 ? "0" + r : r;
+                g = (+rsa[2]).toString(16);
+                g = g.length == 1 ? "0" + g : g;
+                b = (+rsa[3]).toString(16);
+                b = b.length == 1 ? "0" + b : b;
+                a = (+(rsa[5] ? rsa[5] : 1)) * 100
+                return { hex: "#" + r + g + b, alpha: Math.ceil(a) };
+            } else {
+                return { hex: rgb, alpha: 100 };
+            }
         }
     }
-    window.Z = Z;
     Z.init();
-    return Z;
+    // window.Z = Z;
+    // return Z;
 })();
