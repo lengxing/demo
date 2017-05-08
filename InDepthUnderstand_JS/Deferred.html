@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Deferred对象</title>
+</head>
+
+<body>
+    http://www.ruanyifeng.com/blog/2011/08/a_detailed_explanation_of_jquery_deferred_object.html
+    <br>jQuery的deferred对象详解
+    <br>for循环看console
+    <script src="../js/jquery-3.2.0.min.js"></script>
+    <script>
+        /*
+            状态改变
+            resolve 和 reject
+        */
+        var dtd = $.Deferred(); // 新建一个Deferred对象
+        var wait = function (dtd) {
+            var tasks = function () {
+                alert("执行完毕！");
+                // dtd.resolve();
+                　　　　　　dtd.reject();
+            };
+            setTimeout(tasks, 1000);
+            return dtd;
+        };
+        $.when(wait(dtd))
+            .done(function () { alert("哈哈，成功了！"); })
+            .fail(function () { alert("出错啦！"); });
+
+        // for循环
+        var arr = [1,2,3,4,5]
+        for(var i = 0; i<=arr.length-1; i++){
+            setTimeout(function(){
+                console.log(new Date,i)
+            },1000)
+        }
+    </script>
+</body>
+
+</html>
