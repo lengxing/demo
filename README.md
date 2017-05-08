@@ -45,7 +45,7 @@
 +   WritingType ----> js书写方法
 
         prototype --> 面向对象的原型写法
-        
+        Deferred --> Deferred对象改变状态
 
 +   URI ----> URI.js url解析
 
