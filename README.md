@@ -44,7 +44,8 @@
 
 +   WritingType ----> js书写方法
 
-        VariableDeclaration --> 变量声明的方式(面向对象的写法)
+        prototype --> 面向对象的原型写法
+        
 
 +   URI ----> URI.js url解析
 
