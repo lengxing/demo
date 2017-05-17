@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--http://layer.layui.com/-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>layer</title>
+    <style>
+        #submit {
+            width: 100px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border: 1px solid chocolate;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="submit">
+        Click Me!
+    </div>
+    <script src="../js/jquery-3.2.0.min.js"></script>
+    <script src="../js/layer2.4/layer.js"></script>
+    <script>
+        $('#submit').on('click', function () {
+            layer.alert('内容');
+            layer.tab({
+                area: ['600px', '300px'],
+                tab: [{
+                    title: 'TAB1',
+                    content: '内容1'
+                }, {
+                    title: 'TAB2',
+                    content: '内容2'
+                }, {
+                    title: 'TAB3',
+                    content: '内容3'
+                }]
+            });
+        })
+    </script>
+</body>
+
+</html>

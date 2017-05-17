@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style lang="">
+        div{
+            width: 200px;
+            height: 200px;
+            border: 1px solid sienna;
+            float: left;
+            position: relative;
+            overflow: hidden;
+        }
+        .demo1::before{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            border: 3px solid #bbb;
+            border-radius: 50px / 30px;
+            width: 100px;
+            height: 100px;
+            content: "Hellow";
+            zoom:1.5;
+        }
+        .demo1::after{
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: darkcyan;
+            content: "after";
+        }
+    </style>
+</head>
+<body>
+    <div class="demo1">111</div>
+</body>
+</html>

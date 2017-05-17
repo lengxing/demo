@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style lang="">
+        #alink {
+            width: 100%;
+            height: 30px;
+            overflow: hidden;
+        }
+
+        a:link,
+        a:active,
+        a:visited {
+            transition: all 0.4s linear 0s;
+            color: cadetblue;
+            width: 300px;
+            height: 100%;
+            line-height: 30px;
+            font-size: 22px;
+            display: block;
+        }
+
+        a:hover {
+            margin-left: 30px;
+            color: #0f3647;
+            text-decoration: none;
+        }
+
+        .test {
+            width: 300px;
+            height: 100px;
+            background-image: linear-gradient(black, red);
+            /*默认是从上到下的渐变*/
+            /*background-image: linear-gradient(to top, black, red);*/
+            /*从下到上的渐变*/
+            /*background-image: linear-gradient(to right, black, red);*/
+            /*从左到右的渐变*/
+            /*background-image: linear-gradient(to left, black, red);*/
+            /*从右到左的渐变*/
+        }
+
+        .test1 {
+            width: 300px;
+            height: 300px;
+            background-image: linear-gradient(26deg, black 5px, red 60px, yellow 100px, purple 300px);
+        }
+
+        .test2 {
+            width: 300px;
+            height: 100px;
+            background-image: radial-gradient(50px at 50% 50%, white 0%, red 50%, purple 99%, transparent 99%);
+        }
+
+        .test3 {
+            width: 300px;
+            height: 100px;
+            background-image: radial-gradient( ellipse farthest-corner at 30% 30%, white 0%, red 20%, purple 30%, transparent 30%);
+        }
+
+        .test4 {
+            width: 300px;
+            height: 100px;
+            border: 1px solid black;
+            background-image: repeating-linear-gradient(180deg, transparent, transparent 5px, black 5px, black 6px), repeating-linear-gradient(90deg, transparent, transparent 5px, black 5px, black 6px);
+        }
+
+        .test5 {
+            width: 300px;
+            height: 100px;
+            border: 1px solid black;
+            background-image: repeating-linear-gradient(180deg, transparent, transparent 5px, black 5px, black 10px), repeating-linear-gradient(90deg, transparent, transparent 5px, black 5px, black 10px);
+        }
+
+        .test6 {
+            width: 300px;
+            height: 100px;
+            border: 1px solid black;
+            background-image: repeating-radial-gradient(circle, black, black 5px, white 5px, white 10px);
+        }
+
+        .test7 {
+            width: 300px;
+            height: 100px;
+            border: 1px solid black;
+            background-image: repeating-radial-gradient(ellipse, black, black 5px, white 5px, white 10px);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="alink">
+        <a href="">滑动</a>
+    </div>
+    <br>
+    <br>
+    <div class="test"></div>
+    <br>
+    <br>
+    <div class="test1"></div>
+    <br>
+    <br>
+    <div class="test2"></div>
+    <br>
+    <br>
+    <div class="test3"></div>
+    <br>
+    <br>
+    <div class="test4"></div>
+    <br>
+    <br>
+    <div class="test5"></div>
+    <br>
+    <br>
+    <div class="test6"></div>
+    <br>
+    <br>
+    <div class="test7"></div>
+</body>
+
+</html>
