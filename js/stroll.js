@@ -6,7 +6,7 @@
  * Copyright (C) 2012 Hakim El Hattab, http://hakim.se
  */
 (function(){
- 
+
 	"use strict";
 
 	// When a list is configured as 'live', this is how frequently
