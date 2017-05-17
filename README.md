@@ -14,14 +14,18 @@
 | Clipboard1                  | 剪贴板jquery.zclip.js  (需要服务器环境)    |
 | Clipboard2                  | 剪贴板ZeroClipboard.js  (需要服务器环境)   |
 | workerman-chat-for-win      | 实时聊天室  (需要php5.3以上环境,WebSocket) |
-| web-msg-sender              | WebSocket  (bluemp使用,自己未实现)   |
-| cutString                   | 切割字符串  (bluemp使用)   |
-| mobilePulling               | 手机上拉加载下拉刷新  (mui实现)   |
-| fontSet                     | 设置FiraCode字体               |
-| jPages                      | JS分页器        |
-| messy                       | 杂物           |
-| InDepthUnderstand_CSS       | 深入理解CSS    |
-| InDepthUnderstand_JS        | 深入理解JS     |
+| web-msg-sender              | WebSocket  (bluemp使用,自己未实现)        |
+| cutString                   | 切割字符串  (bluemp使用)                  |
+| mobilePulling               | 手机上拉加载下拉刷新  (mui实现)             |
+| fontSet                     | 设置FiraCode字体                         |
+| jPages                      | JS分页器                                 |
+| layer                       | PC和Mobile的layer                       |
+| CustomPromptBox             | 自定义提示框                              |
+| messy                       | 杂物                                    |
+| InDepthUnderstand_CSS       | 深入理解CSS                              |
+| InDepthUnderstand_JS        | 深入理解JS                               |
+
+
 
 ## MarkDown ##
 >[mobileHack.md](https://github.com/KyleThanas/demo/blob/master/mobileHack.md#mobilehack) --> 移动端上遇到的各种坑与相对解决方案
