@@ -37,6 +37,13 @@
         escape_unescape --> Escape加密、UnEscape解密
         scrollingAnimated --> 滚动动画stroll.js实现(demo)
         scrollingAnimated_All --> 滚动动画stroll.js实现(全部)
+        border --> 头像的圆圈
+        meta --> meta标签、link图标、Base属性
+        Tips --> 小技巧。direction、zoom、文字无法选中、图片缩放
+        background_Gradient --> 背景渐变
+        waterRipples_Canvas --> 水波纹Canvas
+        waterRipples_Css --> 水波纹Css
+        beforeAndAfter --> before 和 after 用法
 
 ## InDepthUnderstand_JS ##
 +   Event ----> 事件
@@ -50,7 +57,7 @@
         Deferred --> Deferred对象改变状态
 
 +   URI ----> URI.js url解析
-
++   pcOrMobile ----> 判断pc端还是移动端
 
 ## 常用网址 ##
 
