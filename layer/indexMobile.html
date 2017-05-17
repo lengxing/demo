@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--http://layer.layui.com/-->
+<!--http://layer.layui.com/mobile/-->
 <html lang="en">
 
 <head>
@@ -22,23 +22,13 @@
     <div id="submit">
         Click Me!
     </div>
-    <script src="../js/jquery-3.2.0.min.js"></script>
-    <script src="../js/layer2.4/layer.js"></script>
+    <script src="../js/zepto-1.2.0.min.js"></script>
+    <script src="../js/layer.mobile-v2.0/layer_mobile/layer.js"></script>
     <script>
         $('#submit').on('click', function () {
-            layer.alert('内容');
-            layer.tab({
-                area: ['600px', '300px'],
-                tab: [{
-                    title: 'TAB1',
-                    content: '内容1'
-                }, {
-                    title: 'TAB2',
-                    content: '内容2'
-                }, {
-                    title: 'TAB3',
-                    content: '内容3'
-                }]
+            layer.open({
+                content: '移动版和PC版不能同时存在同一页面'
+                , btn: '我知道了'
             });
         })
     </script>
