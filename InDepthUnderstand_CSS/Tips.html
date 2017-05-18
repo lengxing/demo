@@ -46,6 +46,36 @@
         .img-box:hover>.image-scale {
             transform: scale(0.822);
         }
+        /*颜色反转*/
+
+        .normal {
+            filter: invert(0%);
+        }
+
+        .inverted {
+            filter: invert(100%);
+        }
+
+        #style-3{
+            width: 300px;
+            height: 60px;
+            overflow-x: auto;
+        }
+        #style-3::-webkit-scrollbar {
+            background-color: transparent;
+        }
+        #style-3 span{
+            width: 300px;
+            height: 40px;
+            font-size: 32px;
+            line-height: 40px;
+            white-space:nowrap;
+            -webkit-touch-callout: initial;
+            -webkit-user-select: initial;
+            -moz-user-select:initial;
+            -ms-user-select: initial;
+            user-select: initial;
+        }
     </style>
 </head>
 
@@ -63,6 +93,27 @@
     <div class="img-box">
         <div class="image-scale" style="background-image: url(../images/1.jpg);"></div>
     </div>
+    <br>
+    <span style="border:1px solid red" id="inverted">反转颜色</span>
+
+    <div id="style-3">
+        <span>啊啊啊啊啊阿顶顶顶顶顶哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇</span>
+    </div>
+    <script src="../js/jquery-3.2.0.min.js"></script>
+    <script>
+        var flag = true;
+        $('#inverted').on('click', function () {
+            flag ? a() : b();
+            function a() {
+                $('body').removeClass().addClass('inverted');
+                flag = false;
+            }
+            function b() {
+                $('body').removeClass().addClass('normal');
+                flag = true;
+            }
+        });
+    </script>
 </body>
 
 </html>
