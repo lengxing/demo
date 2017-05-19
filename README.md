@@ -51,6 +51,7 @@
         chooseColor --> 选择颜色或者input的type=color
 
 ## InDepthUnderstand_JS ##
++   userZXZjs ----> 封装js有不少的好东西
 +   Event ----> 事件
 
         Entrust --> 事件委托
@@ -62,7 +63,7 @@
         Deferred --> Deferred对象改变状态
 
 +   URI ----> URI.js url解析
-+   pcOrMobile ----> 判断pc端还是移动端
++   pcOrMobile ----> 判断pc端还是移动端、各种浏览器内核、是否是微信浏览器
 +   pictureCompression ----> 图片压缩
 +   randomNumber ----> 随机串、随机数
 
