@@ -166,12 +166,12 @@
                 for (var i = 1; i < 7; i += 2) {
                     sColorChange.push(parseInt("0x" + sColor.slice(i, i + 2)));
                 }
-                return   sColorChange.join(",");
+                return sColorChange.join(",");
             } else {
                 return sColor;
             }
         },
-        rgbToHex: function(rgb){
+        rgbToHex: function (rgb) {
             /*
                 计算颜色值
                 Z.rgbToHex('rgba(0,13,139,0.3)') --> hex:"#000d8b" alpha:30
@@ -191,6 +191,28 @@
             } else {
                 return { hex: rgb, alpha: 100 };
             }
+        },
+        navigator: function () {
+            /*
+                获取地理位置
+                还没实现
+            */
+            let x, y;
+            if (navigator.geolocation) {
+                var wait = function () {
+                    navigator.geolocation.getCurrentPosition(showPosition)
+                    function showPosition(position) {
+                        x = position.coords.latitude;
+                        y = position.coords.longitude;
+                        console.log(x)
+                        return x + " " + y;
+                    }
+                };
+                $.when(wait())
+                    .done(function () { console.log(x) });
+            }
+            else alert("Geolocation is not supported by this browser.");
+
         }
     }
     Z.init();
