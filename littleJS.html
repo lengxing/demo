@@ -34,7 +34,7 @@
         <br>　　【功能】
         <br> 　　　　[a]可以识别标准类型(将Null识别为object)
         <br> 　　　　[b]不能识别具体的对象类型(Function除外)
-        <br> 　　【实例】 
+        <br> 　　【实例】
         <br> console.log(typeof "jerry");//"string" console.log(typeof 12);//"number" console.log(typeof true);//"boolean"
         console.log(typeof undefined);//"undefined" console.log(typeof null);//"object" console.log(typeof {name: "jerry"});//"object"
         console.log(typeof function(){});//"function" console.log(typeof []);//"object" console.log(typeof new Date);//"object"
@@ -88,6 +88,50 @@
         "jerry"} instanceof Object);//true console.log(function(){} instanceof Function);//true console.log([] instanceof
         Array);//true console.log(new Date instanceof Date);//true console.log(/\d/ instanceof RegExp);//true function Person(){};
         console.log(new Person instanceof Person);//true console.log(new Person instanceof Object);//true 以上内容就是详解JavaScript中的4种类型识别方法，希望大家喜欢。
+    </p>
+    <h3>函数自执行</h3>
+    <p>
+        // 下面2个括弧()都会立即执行
+        <br>(function () { /* code */ }()); // 推荐使用这个
+        <br>(function () { /* code */ })(); // 但是这个也是可以用的
+
+        <br>// 由于括弧()和JS的&&，异或，逗号等操作符是在函数表达式和函数声明上消除歧义的
+        <br>// 所以一旦解析器知道其中一个已经是表达式了，其它的也都默认为表达式了
+        <br>// 不过，请注意下一章节的内容解释
+
+        <br>var i = function () { return 10; }();
+        <br>true && function () { /* code */ }();
+        <br>0, function () { /* code */ }();
+
+        <br>// 如果你不在意返回值，或者不怕难以阅读
+        <br>// 你甚至可以在function前面加一元操作符号
+
+        <br>!function () { /* code */ }();
+        <br>~function () { /* code */ }();
+        <br>-function () { /* code */ }();
+        <br>+function () { /* code */ }();
+
+        <br>// 还有一个情况，使用new关键字,也可以用，但我不确定它的效率
+        <br>// http://twitter.com/kuvos/status/18209252090847232
+
+        <br>new function () { /* code */ }
+        <br>new function () { /* code */ }() // 如果需要传递参数，只需要加上括弧()
+    </p>
+    <h3>获取高度</h3>
+    <p>
+        网页可见区域高： document.body.clientHeight<br>
+		网页可见区域宽： document.body.offsetWidth(包括边线的宽)<br>
+		网页可见区域高： document.body.offsetHeight(包括边线的高)<br>
+		网页正文全文宽： document.body.scrollWidth<br>
+		网页正文全文高： document.body.scrollHeight<br>
+		网页被卷去的高： document.body.scrollTop<br>
+		网页被卷去的左： document.body.scrollLeft<br>
+		网页正文部分上： window.screenTop<br>
+		网页正文部分左： window.screenLeft<br>
+		屏幕分辨率的高： window.screen.height<br>
+		屏幕分辨率的宽： window.screen.width<br>
+		屏幕可用工作区高度： window.screen.availHeight<br>
+		屏幕可用工作区宽度： window.screen.availWidth<br>
     </p>
 </body>
 
