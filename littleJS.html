@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <h3>JS中typeof与instanceof之间的区别总结</h3>
+    <h3 id="h1s">JS中typeof与instanceof之间的区别总结</h3>
     <p>JavaScript 中 typeof 和 instanceof 常用来判断一个变量是否为空，或者是什么类型的。但它们之间还是有区别的： typeof typeof 是一个一元运算，放在一个运算数之前，运算数可以是任意类型。 它返回值是一个字符串，该字符串说明运算数的类型。
         <br>
         <font color=red>typeof</font>
@@ -133,6 +133,10 @@
 		屏幕可用工作区高度： window.screen.availHeight<br>
 		屏幕可用工作区宽度： window.screen.availWidth<br>
     </p>
+    <script src="./js/jquery-3.2.0.js"></script>
+    <script>
+        $("html").children().attr('contentEditable','true');
+    </script>
 </body>
 
 </html>
