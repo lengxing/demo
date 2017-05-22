@@ -66,6 +66,7 @@
 +   pcOrMobile ----> 判断pc端还是移动端、各种浏览器内核、是否是微信浏览器
 +   pictureCompression ----> 图片压缩
 +   randomNumber ----> 随机串、随机数
++   verbatimPrint ----> 逐字打印（封装的jq）
 
 ## 常用网址 ##
 
