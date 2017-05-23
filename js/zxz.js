@@ -250,6 +250,21 @@
             };
             // 延迟1s开始
             setTimeout(printer, 1000);
+        },
+        listenKey: function (num) {
+            /** 
+              * 监听按键
+              * @param num
+              * @returns {{}}
+           */
+            $(window).keydown(function (event) {
+                var currKey = 0, e = e || event;
+                currKey = e.keyCode || e.which || e.charCode;
+                var keyName = String.fromCharCode(currKey);
+                if (num == currKey) {
+                    console.log("按键码: " + currKey + " 字符: " + keyName);
+                }
+            });
         }
     }
     Z.init();
