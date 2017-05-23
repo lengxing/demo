@@ -41,7 +41,7 @@
         escape_unescape --> Escape加密、UnEscape解密
         scrollingAnimated --> 滚动动画stroll.js实现(demo)
         scrollingAnimated_All --> 滚动动画stroll.js实现(全部)
-        border --> 头像的圆圈
+        border --> 头像的圆圈、1px线
         meta --> meta标签、link图标、Base属性
         Tips --> 小技巧。direction、zoom、文字无法选中、图片缩放、invert、div内部文字横向滚动
         background_Gradient --> 背景渐变
