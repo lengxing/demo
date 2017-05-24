@@ -265,6 +265,9 @@
                     console.log("按键码: " + currKey + " 字符: " + keyName);
                 }
             });
+        },
+        setting:function(){
+            
         }
     }
     Z.init();
